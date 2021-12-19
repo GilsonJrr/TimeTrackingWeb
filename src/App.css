@@ -1,38 +1,82 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #0D1323;
   display: flex;
-  flex-direction: column;
+  height: 100vh;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.HeaderMain {
+  display: flex;
+  width: 254px;
+  height: 516px;
+  background: #1D204B;
+  border-radius: 20px;
+  flex-direction: column;
+  padding-bottom: 15px;
+  margin-right: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.Header {
+  display: flex;
+  flex-direction: column;
+  height: 353px;
+  top: 254px;
+  background: #5746EA;
+  border-radius: 20px;
+  padding-top: 34px;
+  padding-left: 37px;
+  margin-bottom: 15px;
   }
-  to {
-    transform: rotate(360deg);
-  }
+
+.Date {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  color: #5F659E;
+  margin-top: 8px;
+  margin-left: 30px;
+}
+
+.Photo {
+  width: 86px;
+  height: 86px;
+  background: #1D204B;
+  border: 3px solid #FFFFFF;
+  border-radius: 100px;
+}
+
+.Title {
+  padding-top: 20px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  color: #B5ADFF;
+}
+
+.Name {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 45px;
+  color: #FFFFFF;
+}
+
+.CardMain{
+  display: flex;
+  width: 254px;
+  height: 250px;
+  background: #FD8C64;
+  border-radius: 25px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  align-items: flex-end;
+}
+
+.Card{
+  width: 254px;
+  height: 198px;
+  background: #1D204B;
+  border-radius: 20px;
 }
