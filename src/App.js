@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
 
 import Work from '../src/Image/Work.png'
@@ -12,9 +12,41 @@ import MainCard from './Pages/MainCard';
 import Card from './Pages/Cards';
 
 function App() {
+
+  const [ day, setDay] = useState (true)
+  const [ week, setWeek] = useState (false)
+  const [ month, setMonth] = useState (false)
+
+  function HandleDay (){
+    setDay(true)
+    setWeek(false)
+    setMonth(false)
+  }
+
+  function HandleWeek (){
+    setDay(false)
+    setWeek(true)
+    setMonth(false)
+  }
+
+  function HandleMonth (){
+    setDay(false)
+    setWeek(false)
+    setMonth(true)
+  }
+
   return (
     <body className="App">
-      <MainCard/>
+
+      <MainCard 
+        day={day} 
+        HandleDay={HandleDay}
+        week={week} 
+        HandleWeek={HandleWeek}
+        month={month}
+        HandleMonth={HandleMonth}
+      />
+
       <div>
         <Card title="Work" color="#FD8C64" img={Work} time="32"/>
         <Card title="Exercise" color="#4BCF83" img={Exercise} time="4"/>

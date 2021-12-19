@@ -39,11 +39,12 @@
 }
 
 .Photo {
-  width: 86px;
-  height: 86px;
+  width: 80px;
+  height: 80px;
   background: #1D204B;
   border: 3px solid #FFFFFF;
   border-radius: 100px;
+  margin-bottom: 20px;
 }
 
 .Title {
@@ -114,4 +115,14 @@
 .Img{
   margin-top: 33px;
   margin-left: 20px;
+}
+
+.bottonText{
+  background: #1D204B;
+  border-color: #1D204B;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  align-items: flex-start; 
+  display: flex;
 }
