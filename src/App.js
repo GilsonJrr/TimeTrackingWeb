@@ -13,7 +13,7 @@ function App() {
         <Card/>
       </div>
       <div>
-        <Card/>
+        <Card/> 
         <Card/>
       </div>
       <div>
