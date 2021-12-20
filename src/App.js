@@ -18,21 +18,15 @@ function App() {
   const [ month, setMonth] = useState (false)
 
   function HandleDay (){
-    setDay(true)
-    setWeek(false)
-    setMonth(false)
+    setDay(true); setWeek(false); setMonth(false)
   }
 
   function HandleWeek (){
-    setDay(false)
-    setWeek(true)
-    setMonth(false)
+    setDay(false); setWeek(true); setMonth(false)
   }
 
   function HandleMonth (){
-    setDay(false)
-    setWeek(false)
-    setMonth(true)
+    setDay(false); setWeek(false); setMonth(true);
   }
 
   return (
@@ -48,16 +42,16 @@ function App() {
       />
 
       <div>
-        <Card title="Work" color="#FD8C64" img={Work} time="32"/>
-        <Card title="Exercise" color="#4BCF83" img={Exercise} time="4"/>
+        <Card title="Work" color="#FD8C64" img={Work} time="32" day={day} week={week} month={month} />
+        <Card title="Exercise" color="#4BCF83" img={Exercise} time="4" day={day} week={week} month={month} />
       </div>
       <div>
-        <Card title="Play" color="#56C2E6" img={Play} time="10"/> 
-        <Card title="Social" color="#7235D1" img={Social} time="5"/>
+        <Card title="Play" color="#56C2E6" img={Play} time="10" day={day} week={week} month={month} /> 
+        <Card title="Social" color="#7235D1" img={Social} time="5" day={day} week={week} month={month} />
       </div>
       <div>
-        <Card title="Study" color="#FF5E7D" img={Study} time="4"/>
-        <Card title="Self Care" color="#F1C75B" img={SelfCare} time="2"/>
+        <Card title="Study" color="#FF5E7D" img={Study} time="4" day={day} week={week} month={month} />
+        <Card title="Self Care" color="#F1C75B" img={SelfCare} time="2" day={day} week={week} month={month} />
       </div>
     </body>
   );
