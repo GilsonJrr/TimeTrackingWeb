@@ -11,7 +11,7 @@
 .ContainerCards{
   display: flex;
   flex-wrap: wrap; 
-  width: 60%;
+  width: 55%;
   align-self: center;
 }
 
