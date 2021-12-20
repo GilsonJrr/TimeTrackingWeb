@@ -1,13 +1,17 @@
 import React from 'react';
 import '../App.css';
 
+import Photo from '../Image/image-jeremy.png';
+
 function MainCard(props) {
   return (
     <div className="HeaderMain">
         <div className="Header">
-            <div className="Photo"></div>
+            <div className="Photo">
+              <img src={Photo} style={{width: '100%'}}/> 
+            </div>
             <div className="Title"> Report for </div>
-            <div className="Name"> Gilson Cosme </div>
+            <div className="Name"> Jeremy Robson </div>
         </div>
         <button className="bottonText" onClick={ ()=> props.HandleDay()}> 
           { props.day === true && <div className="Date" style={{color: '#FFFFFF'}}> Daily </div> }

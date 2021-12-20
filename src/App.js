@@ -27,21 +27,31 @@ function App() {
   return (
     <body className="App">
 
-        <MainCard 
-          day={day} 
-          HandleDay={HandleDay}
-          week={week} 
-          HandleWeek={HandleWeek}
-          month={month}
-          HandleMonth={HandleMonth}
-        />
-      
+        <div className="ContainerMainCard">
+          <MainCard 
+            day={day} 
+            HandleDay={HandleDay}
+            week={week} 
+            HandleWeek={HandleWeek}
+            month={month}
+            HandleMonth={HandleMonth}
+          />
+        </div>
     
         <div className="ContainerCards">
           {data.map((item) => {
             return(
               <div key={item.id}>
-                <Card title={item.Title} color={item.Color} img={item.Image} time={item.Time[select]} day={day} week={week} month={month} />
+                <Card 
+                  title={item.Title} 
+                  color={item.Color} 
+                  img={item.Image} 
+                  time={item.Time[select]} 
+                  lastTime={item.LastTime[select]} 
+                  day={day} 
+                  week={week} 
+                  month={month} 
+                />
               </div>
             );
           })}
