@@ -52,11 +52,12 @@ export const HeaderMain = styled.div`
         width: 100%;
         height: 210px;
         margin-top: 50px;
+        margin-bottom: 20px;
         margin-right: 0px;
     }
     background: #1D204B;
     border-radius: 20px;
-    padding-bottom: 15px;
+    padding-bottom: 30px;
     margin-right: 15px;
     justify-content: center;
 `;
@@ -69,6 +70,7 @@ export const Header = styled.div`
     height: 65%;
     background: #5746EA;
     border-radius: 20px;
+    align-items: center;
     padding-top: 34px;
     margin-bottom: 15px;
 `;
@@ -119,10 +121,11 @@ export const Name = styled.div`
     font-size: 45px;
     @media(max-width: 1000px){
         //mobile
-        font-size: 25px;
+        font-size: 30px;
     }
     color: #FFFFFF;
-    margin-bottom: 66px;
+    margin-bottom: 40px;
+    margin-top: 10px ;
 `;
 
 export const bottonText = styled.div`
@@ -146,7 +149,7 @@ export const CardMain = styled.div`
     @media(max-width: 1000px){
         //Mobile
         width: 100%;
-        height: 200px;
+        height: 167px;
         margin-left: 0px;
     }
     
@@ -165,7 +168,7 @@ export const Cards = styled.div`
     width: 100%;
     height: 230px;
     border-radius: 20px;
-    margin-top: -20px;
+    margin-top: -30px;
     flex-direction: column;
     cursor: pointer;
 `;
