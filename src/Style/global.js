@@ -11,7 +11,9 @@ export const AppContainer = styled.body`
     justify-content: center;
     @media(max-width: 1000px){
         height: 100%;
-        padding: 50px;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
     }
 `;
   
@@ -20,6 +22,11 @@ export const ContainerCards = styled.div`
     flex-wrap: wrap; 
     max-width: 852px;
     align-self: center;
+    @media(max-width: 1000px){
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
 `;
   
 export const ContainerMainCard = styled.div`
@@ -46,6 +53,7 @@ export const HeaderMain = styled.div`
         width: 346px;
         height: 210px;
         margin-top: 50px;
+        margin-right: 0px;
     }
     background: #1D204B;
     border-radius: 20px;
@@ -80,8 +88,8 @@ export const Date = styled.div`
     @media(max-width: 1000px){
         //mobile
         padding-right: 0px;
-        margin-left: 15px;
-        margin-right: 15px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 `;
 
