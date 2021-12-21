@@ -28,9 +28,8 @@ Users should be able to:
 
 ### Screenshot
 
-<img src="https://user-images.githubusercontent.com/65792764/146939436-77e93fb7-95d1-4f09-9f3f-801eba37563d.jpg" width=25% height=25%>
-![TTweb](https://user-images.githubusercontent.com/65792764/146939436-77e93fb7-95d1-4f09-9f3f-801eba37563d.jpg)
-![TTmobile](https://user-images.githubusercontent.com/65792764/146939438-55d6dc82-4a27-4af7-bb8c-9517e7a5c407.jpg)
+<img src="https://user-images.githubusercontent.com/65792764/146939436-77e93fb7-95d1-4f09-9f3f-801eba37563d.jpg" width=50% height=50%>
+<img src="https://user-images.githubusercontent.com/65792764/146939438-55d6dc82-4a27-4af7-bb8c-9517e7a5c407.jpg" width=25% height=25%>
 
 ### Links
 
