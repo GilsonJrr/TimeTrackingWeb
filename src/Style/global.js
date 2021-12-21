@@ -21,11 +21,10 @@ export const ContainerCards = styled.div`
     display: flex;
     flex-wrap: wrap; 
     max-width: 852px;
-    align-self: center;
     @media(max-width: 1000px){
-        display: flex;
-        flex-wrap: nowrap;
+        width: 90%;
         flex-direction: column;
+        max-width: 100%;
     }
 `;
   
@@ -34,7 +33,7 @@ export const ContainerMainCard = styled.div`
     /*max-width: 354px;*/
     max-width: 350px;
     @media(max-width: 1000px){
-        max-width: 390px;  
+        max-width: 90%;  
     }
     display: flex; 
     justify-content: flex-end;
@@ -50,7 +49,7 @@ export const HeaderMain = styled.div`
     height: 516px;
     @media(max-width: 1000px){
         //mobile 
-        width: 346px;
+        width: 100%;
         height: 210px;
         margin-top: 50px;
         margin-right: 0px;
@@ -146,8 +145,9 @@ export const CardMain = styled.div`
     
     @media(max-width: 1000px){
         //Mobile
-        width: 346px;
+        width: 100%;
         height: 200px;
+        margin-left: 0px;
     }
     
     background: #FD8C64;
