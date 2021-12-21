@@ -2,7 +2,7 @@
 .App {
   background-color: #0D1323;
   display: flex;
-  width: 100%;
+  flex-wrap: wrap;
   height: 100vh;
   align-items: center;
   justify-content: center;
@@ -11,12 +11,15 @@
 .ContainerCards{
   display: flex;
   flex-wrap: wrap; 
-  width: 55%;
+  max-width: 852px;
+  width: 70vw;
   align-self: center;
 }
 
 .ContainerMainCard{
-  width: 30%;
+  /**/
+  /*max-width: 354px;*/
+  max-width: 346px;
   display: flex; 
   justify-content: flex-end;
 }
@@ -86,8 +89,15 @@
 .CardMain{
   display: flex;
   flex-direction: column;
+
+  /*Web*/
   width: 254px;
   height: 250px;
+
+  /*Mobile*/
+  /*width: 346px;
+  height: 200px;*/
+
   background: #FD8C64;
   border-radius: 25px;
   margin-left: 15px;
@@ -100,10 +110,9 @@
 
 .Card{
   display: flex;
-  width: 214px;
+  width: 100%;
   height: 230px;
   border-radius: 20px;
-  padding-left: 41px;
   margin-top: -20px;
   flex-direction: column;
   cursor: pointer;

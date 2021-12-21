@@ -1,31 +1,41 @@
 import React from 'react';
 import '../App.css';
 
-import Photo from '../Image/image-jeremy.png';
+import {HeaderMain, Header, Date, Photo, Title, Name, bottonText} from '../Style/global';
+import photo from '../Image/image-jeremy.png';
 
 function MainCard(props) {
   return (
-    <div className="HeaderMain">
-        <div className="Header">
-            <div className="Photo">
-              <img src={Photo} style={{width: '100%'}}/> 
+    <HeaderMain>
+      
+        <Header>
+            <div style={{paddingLeft: 25, display: 'flex', flexWrap: 'wrap'}}>
+              <Photo>
+                <img src={photo} style={{width: '100%'}}/> 
+              </Photo>
+              <div>
+                <Title> Report for </Title>
+                <Name> Jeremy Robson </Name>
+              </div>
             </div>
-            <div className="Title"> Report for </div>
-            <div className="Name"> Jeremy Robson </div>
+        </Header>
+
+        <div style={{display: 'flex', flexWrap: 'wrap',}}>
+          <bottonText style={{cursor: 'pointer'}} onClick={ ()=> props.HandleDay()}> 
+            { props.day === true && <Date style={{color: '#FFFFFF'}}> Daily </Date> }
+            { props.day === false && <Date> Daily </Date>}
+          </bottonText>
+          <bottonText style={{cursor: 'pointer'}} onClick={ ()=> props.HandleWeek()}> 
+            { props.week === true && <Date style={{color: '#FFFFFF'}}> Weekly </Date> }
+            { props.week === false && <Date> Weekly </Date>}
+          </bottonText>
+          <bottonText style={{cursor: 'pointer'}} onClick={ ()=> props.HandleMonth()}> 
+            { props.month === true && <Date style={{color: '#FFFFFF'}}> Monthly </Date> }
+            { props.month === false && <Date> Monthly </Date>}
+          </bottonText>
         </div>
-        <button className="bottonText" onClick={ ()=> props.HandleDay()}> 
-          { props.day === true && <div className="Date" style={{color: '#FFFFFF'}}> Daily </div> }
-          { props.day === false && <div className="Date"> Daily </div>}
-        </button>
-        <button className="bottonText" onClick={ ()=> props.HandleWeek()}> 
-          { props.week === true && <div className="Date" style={{color: '#FFFFFF'}}> Weekly </div> }
-          { props.week === false && <div className="Date"> Weekly </div>}
-        </button>
-        <button className="bottonText" onClick={ ()=> props.HandleMonth()}> 
-          { props.month === true && <div className="Date" style={{color: '#FFFFFF'}}> Monthly </div> }
-          { props.month === false && <div className="Date"> Monthly </div>}
-        </button>
-    </div>
+        
+    </HeaderMain>
   );
 }
 
