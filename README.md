@@ -16,6 +16,22 @@ This is a solution to the [Time tracking dashboard challenge on Frontend Mentor]
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
+
+### The challenge
+
+Users should be able to:
+
+- View the optimal layout for the site depending on their device's screen size
+- See hover states for all interactive elements on the page
+- Switch between viewing Daily, Weekly, and Monthly stats
+
+### Screenshot
+
+<img src="https://user-images.githubusercontent.com/65792764/146939436-77e93fb7-95d1-4f09-9f3f-801eba37563d.jpg" width=25% height=25%>
+![TTweb](https://user-images.githubusercontent.com/65792764/146939436-77e93fb7-95d1-4f09-9f3f-801eba37563d.jpg)
+![TTmobile](https://user-images.githubusercontent.com/65792764/146939438-55d6dc82-4a27-4af7-bb8c-9517e7a5c407.jpg)
+
+### Links
+
+- Live Site URL: https://time-tracking-web-pth11vg7b-gilsonjrr.vercel.app/
