@@ -37,3 +37,26 @@ Users should be able to:
 ### Links
 
 - Live Site URL: https://time-tracking-web-pth11vg7b-gilsonjrr.vercel.app/
+
+## My process
+
+### Built with
+
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- [React](https://reactjs.org/) - JS library
+- [Next.js](https://nextjs.org/) - React framework
+- [Styled Components](https://styled-components.com/) - For styles
+
+### What I learned
+
+With this challenge, I learned how to use a more responsive design using reactjs and styled-components,  I tried to create a design as close as possible to the example given on the frontendmentor website.
+
+### Continued development
+
+The next step would be to add a button in which the user could add the time daily, also a login, and possible more activities 
+
+## Author
+
+- Frontend Mentor - [@GilsonJrr](https://www.frontendmentor.io/profile/GilsonJrr)
