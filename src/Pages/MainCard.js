@@ -1,5 +1,4 @@
 import React from 'react';
-import '../App.css';
 
 import {HeaderMain, Header, Date, Photo, Title, Name, bottonText} from '../Style/global';
 import photo from '../Image/image-jeremy.png';

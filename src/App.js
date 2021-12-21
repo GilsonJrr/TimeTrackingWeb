@@ -1,9 +1,10 @@
 import React, {useState} from 'react';
-import './App.css';
 
 import MainCard from './Pages/MainCard';
 import Card from './Pages/Cards';
 import { data } from './Data/Data';
+
+import {AppContainer, ContainerCards, ContainerMainCard} from './Style/global';
 
 function App() {
 
@@ -25,9 +26,9 @@ function App() {
   }
 
   return (
-    <body className="App">
+    <AppContainer>
 
-        <div className="ContainerMainCard">
+        <ContainerMainCard>
           <MainCard 
             day={day} 
             HandleDay={HandleDay}
@@ -36,9 +37,9 @@ function App() {
             month={month}
             HandleMonth={HandleMonth}
           />
-        </div>
+        </ContainerMainCard>
     
-        <div className="ContainerCards">
+        <ContainerCards>
           {data.map((item) => {
             return(
               <div key={item.id}>
@@ -55,9 +56,9 @@ function App() {
               </div>
             );
           })}
-        </div>
+        </ContainerCards>
       
-    </body>
+    </AppContainer>
   );
 }
 
